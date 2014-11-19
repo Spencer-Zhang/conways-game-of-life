@@ -44,7 +44,6 @@ class World
   end
 
   def to_s
-    neighbors = map_neighbors
     string = ""
     (-10..29).each do |r|
       string << (-10..29).to_a.map{|c| ((@cells[[r,c]] != nil) ? "X" : " ")}.join + "\n"
